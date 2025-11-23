@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapping Nurse Staffing Policy Across the US</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+          integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+          crossorigin=""/>
+    <style>
+        #map {
+            width: 100%;
+            height: 50vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Mapping Nurse Staffing Policy Across the US</h1>
+    </div>
+    <div id="map"></div>
+    <div class="next">
+        <h2>What Does Staffing Policy Mean for Patients?</h2>
+        <p>Every additional patient a nurse takes on carries an additional 12% odds of in-patient mortality. </p>
+    </div>
+</body>
+</html>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+        crossorigin=""></script>
+<script src="index.js"></script>
