@@ -1,9 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapping Nurse Staffing Policy Across the US</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div class="header">
+    <h1>Mapping Nurse Staffing Policy Across the US</h1>
+    <nav class="navigation">
+        <a href="index.html" class="active">Map</a>
+        <a href="process.html">Process</a>
+    </nav>
+</div>
+<div class="process">
+    <p>I researched the map by using <a href="https://nursa.com/blog/rn-to-patient-staffing-ratios">
+        "RN Nurse-to-Patient Ratios by State"</a> as a starting point.
+        From there, I used various state legislation websites to verify the information, which are linked in the map.
+    </p>
+    <br>
+    <p>The website was created with a combination of HTML, CSS, and JavaScript (JS).
+        HTML is used to describe the elements of the website, including text, images, and links.
+        CSS is used for styling HTML.
+        With CSS I added borders, margins, and specified fonts, but chose to keep the site simple.</p>
+    <br>
+    <p>JS is used to add interactivity to the website.
+        This posed the biggest challenge in making this website, as it required extensive research as well as trial and error.
+        I started by researching various JS libraries that would allow me to create interactive data.
+        I looked into <a href="https://d3js.org/">D3js</a> for a time, but found it to be too advanced for my
+        first website, and potentially overkill. I also looked into <a href="https://www.chartjs.org/">Charts.js</a> but
+        scrapped the idea when I decided that an interactive map would be my focus. I ultimately settled on <a href="https://leafletjs.com/index.html">Leaflet</a>
+        due to its simple implementation and close fit to my needs.
+    </p>
+    <br>
+    <p>I started by following the <a href="https://leafletjs.com/examples/quick-start/">quick start tutorial</a>
+        for Leaflet, followed by the <a href="https://leafletjs.com/examples/choropleth/">chloropleth map tutorial.</a>
+    I used the GeoJSON data provided by Leaflet to create an interactive overlay of the individual states. GeoJSON is a data format
+        that allows you to store and display geographic data with custom parameters.
+    </p>
+    <br>
+    <p>
+        In addition to the display data provided by Leaflet, the custom parameters I used were "State," "Staffing #," and "Staffing policy description."
+        "Staffing #" is a numerical description of the staffing policy, used to assign colors to the map, as shown in the map key.
+        "Staffing description" is what the user sees when they hover over a state. In addition, I added a parameter containing a URL of each state's
+        policy (if it exists).
+
+    </p>
+</div>
 </body>
 </html>
